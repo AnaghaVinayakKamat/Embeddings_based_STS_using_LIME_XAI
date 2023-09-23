@@ -28,3 +28,5 @@ Reference: https://www.sbert.net/docs/pretrained_models.html
 
 
 The experiments showed that LIME is not an ideal choice to obtain semantic text similarity explainations due to the poor quality of output generated. Although, LIME could successfully identify and highlight ambiguous words which could eventually help us identify ambiguity error.
+
+Output for 
