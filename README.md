@@ -22,13 +22,15 @@ paraphrase-albert-small-v2 | 52.25 | 5000 | 43 MB
 all-mpnet-base-v2  | **63.30** | 2800 | 420MB
 all-MiniLM-L12-v2 | 59.76 | 7500 | 120MB
 
-The first 2 models were chosen since they have the best processing speed than the rest. Nonetheless, as the name suggest "paraphrase-MiniLM-L6-v2", this model is particularly aimed for paraphrased texts analysis which makes it a right choice for using it in this research. Since, our focus was implementing explainable semantic similarity for English language at the moment, the next model we decided was "paraphrase-albert-small-v2" since, it was the best performing model for English language. The "all-mpnet-base-v2" model was chosen as it showed the best quality output for semantic search. The 5th model "all-MiniLM-L12-v2" is the 4th best model according to the source for semantic similarity task and it could also give better results of all. Hence that model was chosen for this research.
-
 Reference: https://www.sbert.net/docs/pretrained_models.html
 
+### Result Analysis
+The experiments showed that LIME is not an ideal choice to obtain semantic text similarity explainations due to the poor quality of output generated. Although, LIME could successfully identify and highlight ambiguous words which could eventually help us identify ambiguity error. Lime gave the best output results for **paraphrase-MiniLM-L6-v2** model
 
-The experiments showed that LIME is not an ideal choice to obtain semantic text similarity explainations due to the poor quality of output generated. Although, LIME could successfully identify and highlight ambiguous words which could eventually help us identify ambiguity error.
-
-#### Here is the Output for one of the example sentences shown by the best performing sentence-transformer
+**Here is the Output for one of the example sentences shown by the best performing sentence-transformer**
 
 ![alttext](https://github.com/AnaghaVinayakKamat/Embeddings_based_STS_using_LIME_XAI/blob/e698a840c6c6d1401fe0f2fe86fa131f466a51c7/Output/Screenshot%202023-09-23%20223514.png)
+
+
+
+**A detailed explanation about the model and the research can be found inside the notebooks.**
